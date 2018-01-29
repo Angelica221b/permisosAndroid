@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="agtzm.tareapermisos.App">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="19dp"
+        android:layout_toStartOf="@+id/btnCall"
+        android:text="Contactos"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:onClick="llamada"
+        android:text="Llamada"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp"
+        android:onClick="mensaje"
+        android:text="Mensaje"
+        tools:ignore="OnClick" />
+
+
+</RelativeLayout>
